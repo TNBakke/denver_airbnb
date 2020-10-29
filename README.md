@@ -1,6 +1,6 @@
 # Denver Airbnb Market Analysis for Potential Investment
 
-![Alt](./images/airbnb_logo2.jpeg)
+![Alt](./images/airbnb_logo_3_new.png)
 
 ## Motivation
 
@@ -17,7 +17,7 @@ The pioneer of the short-term vacation rental marketplace, Airbnb, was founded i
 The 'Inside Airbnb' project compiled the Denver Airbnb datasets I used for my research and they have hundreds of other cities across the world to analyze (see project details [here](http://insideairbnb.com/get-the-data.html) for more information). The data was scraped from Airbnb's website and the first Denver Airbnb dataset was published in May 2016. However, the second Denver Airbnb dataset was not published until November 2017 which is a gap of approximately 1.5 years. After that, the data was collected and published at a much more consistant rate eventually being published every month starting in July 2018. Fortunately, the datasets that were published by 'Inside Airbnb' did not require much data munging as there were almost zero NaN values so I was able to focus the majority of my time on the analysis. The majority of NaN values I came across were under the column header "neighbourhood_group" which did not provide any additional insight for me so I was able to easily drop that column. The files included in each month's dataset were: "listings.csv", "calendar.csv", "reviews.csv", and "neighborhoods.csv". I used the "listings.csv" and "neighborhoods.csv" files for the majority of my data analysis. However, I needed the "calendar.csv" to compute the average Denver Rental Occupancy Rate.   
 
 
-![Alt](./images/listings_csv_table.png)
+![Alt](./images/final_plots/airbnb_table_ss_new.png)
 
 
 ## Investment Opportunity / Strategy
@@ -36,11 +36,11 @@ In order to feel confident in making the correct investment decision, there are 
 
 After analyzing the data from the available datasets, you can see that the quantity of Denver Airbnb Rentals increased from under 4,000 in November 2017 to a maximum of about 5,200 units in November 2018. It is worth noting that the quantity of Denver Airbnb Rentals in May 2016 was only 2,505 units. However, since there was an 18 month gap between the first and second published Denver Airbnb dataset, I decided not to include that value in my plot. For reference, the growth over that 18 month span is a 156% increase in rental units. It is also interesting to note the red veritcal line I added to my plot below. This red line signifies the beginning of the mandatory COVID-19 pandemic lockdowns and you can see the sharp decrease in available rental units after that date in March 2020.
 
-![Alt][./images/final_plots/quan_plot_final.png]
+![Alt](./images/final_plots/quan_plot_final.png)
 
 ## Average Occupancy Rate in Denver Compared to U.S. Average
 
-To determine the average Occupancy Rate in the Denver market, I evaluated the "calendar.csv" files from March 2019 to March 2020 so I could get an accurate assessment of the market prior to the COVID-19 global pandemic (Note: The Dataset for March_2020 was scraped before lockdowns in the United States began). By taking the occupancy rates and averaging them out across 12 months it will ensure that I am capturing any fluctuations due to 'seaonality'. While researching online, I found a resource which calcuated the average Occupancy Rate across 500 cities in the U.S. to be about 48% (see source link below). From my analysis, Denver, Colorado's rental Occupancy Rate was a very high 62.1% (about 129% over the national average). 
+To determine the average Occupancy Rate in the Denver market, I evaluated the "calendar.csv" files from March 2019 to March 2020 so I could get an accurate assessment of the market prior to the COVID-19 global pandemic (*Note: The Dataset for March_2020 was scraped before lockdowns in the United States began*). By taking the occupancy rates and averaging them out across 12 months it will ensure that I am capturing any fluctuations due to 'seaonality'. While researching online, I found a resource which calcuated the average Occupancy Rate across 500 cities in the U.S. to be about 48% (see source link below). From my analysis, Denver, Colorado's rental Occupancy Rate was a very high 62.1% (about 129% over the national average). This is great supporting evidence that investing in a short-term rental property will be successful in the Denver market.
 
 ![Alt](./images/average-airbnb-occupancy-rate-distribution-US-500-cities-1024x512.png)
 
@@ -63,7 +63,7 @@ One of the most important factors when considering a short-term vacation rental 
 
 When investing in a short-term rental property it is critical to find the optimal location to maximize annual revenue. So, I analyzed the Denver Airbnb Data over the span of 3 years (April 2018 - April 2020) to see which neighborhoods had the most Airbnb listings and how they changed over the years. After I assessed the data, it was interesting that the Top 5 Airbnb Rental Neighborhoods were the same for all 3 years with some variation of quantities. The biggest takeaway when evaluating the plot, was that Five Points has the highest amount of rentals by a margin of 44% for April 2020. Additionally it's interesting to note the steady decrease in Airbnb listings in the Capitol Hill neighborhood.
 
-![Alt](./images/final_plots/top_5_neighborhoods.png)
+![Alt](./images/final_plots/testtesttest.png)
 
 ## Which Denver Neighborhoods are the Fastest Growing?
 
