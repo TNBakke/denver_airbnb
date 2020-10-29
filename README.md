@@ -54,46 +54,36 @@ By analyzing the "listings.csv" file for the first quarter of 2020 (January, Feb
 
 ## What is the Current Distribution of Prices by Each Rental Type?
 
-One of the most important factors when considering a short-term vacation rental investment is regarding the distribution of the pricing per each rental type. As noted above, Airbnb Hosts have the ability to host an Entire House (or Apartment), Private Room in your Home (or Apartment), Shared Room in your Home (or Aparment) and now hotels are able to post their available rooms on the Airbnb marketplace. Before generating the pricing distributions for each rental type, I sorted the data and removed any outliers (nightly listing price over 9000 USD). After analyzing the pricing data for each type of rental type, it is clear that you can generate the most revenue from listing your Entire Home (or Apartment) by over two times the next highest average price which is a hotel room. The 'violin plots' shown below are interesting as they illustrate each rental type's distribution of pricing. As a note, I set the X-axis limit to 1,000 USD to accentuate the distribution curves and eliminate the outliers which do not provide much insight.
+One of the most important factors when considering a short-term vacation rental investment is regarding the distribution of the pricing per each rental type. As noted above, Airbnb Hosts have the ability to host an Entire House (or Apartment), Private Room in your Home (or Apartment), Shared Room in your Home (or Aparment) and now hotels are able to post their available rooms on the Airbnb marketplace. Before generating the pricing distributions for each rental type, I sorted the data and removed any outliers (nightly listing price over 9000 USD). After analyzing the pricing data for each type of rental type, it is clear that you can generate the most revenue from listing your Entire Home (or Apartment) by over two times the next highest average price which is a hotel room. Below I added the table for the statistical results of each pricing distribution including the means of each type. Additionally I added some 'violin plots' below illustrating each rental type's distribution of pricing. As a note, I set the X-axis limit to 1,000 USD to accentuate the distribution curves and eliminate the outliers which do not provide much insight.
 
+![Alt](./images/denver_airbnb_pricing_table.png)
 ![Alt](./images/final_plots/violin_plot_w_lim.png)
 
 ## Which Denver Neighborhoods Have the Most Listings?
 
-When investing in a short-term rental property it is critical to find the optimal location to maximize annual revenue. So, I analyzed the Denver Airbnb Data over the span of 3 years to see which neighborhoods had the most Airbnb listings and how they changed over the years. After I assessed the data, it was interesting that the Top 5 Airbnb Rental Neighborhoods were the same for all 3 years with some variation of quantities. The biggest takeaway when evaluating the plot, was the steady decrease in Airbnb listings in the Capitol Hill neighborhood.
+When investing in a short-term rental property it is critical to find the optimal location to maximize annual revenue. So, I analyzed the Denver Airbnb Data over the span of 3 years (April 2018 - April 2020) to see which neighborhoods had the most Airbnb listings and how they changed over the years. After I assessed the data, it was interesting that the Top 5 Airbnb Rental Neighborhoods were the same for all 3 years with some variation of quantities. The biggest takeaway when evaluating the plot, was that Five Points has the highest amount of rentals by a margin of 44% for April 2020. Additionally it's interesting to note the steady decrease in Airbnb listings in the Capitol Hill neighborhood.
 
-**INSERT PLOT HERE**
+![Alt](./images/final_plots/top_5_neighborhoods.png)
 
 ## Which Denver Neighborhoods are the Fastest Growing?
 
-Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings over the past year is an important factor when evaluating potential locations for an investment as well. After plotting the data, it was apparent that the two fastest growing neighborhoods in the Denver Airbnb market were Union Station at 66.2% YoY growth and Green Valley Ranch at 59.6%. The other neighborhoods that rounded out the Top 5 showed much more modest gains. As an aside, I decided to chose to analyze the data between the span of February 2019 and February 2020 to ensure that I would not capture any data skewed data as a result of the COVID-19 pandemic.
+Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings over the past year is an important factor when evaluating potential locations for an investment as well. After plotting the data, it was apparent that the two fastest growing neighborhoods in the Denver Airbnb market were Union Station at 66.2% YoY (Year over Year) growth and Green Valley Ranch at 59.6% YoY. The other neighborhoods that rounded out the Top 5 showed much more modest gains. As an aside, I decided to chose to analyze the data between the span of February 2019 and February 2020 to ensure that I would not capture any data skewed data as a result of the COVID-19 pandemic.
 
-**INSERT PLOT HERE**
+![Alt](./images/final_plots/fastest_growing_neighbs.png)
 
 ## Which Denver Neighborhoods Charge the Highest Listing Prices?
 
 Evaluating the Denver Airbnb neighborhoods which charge the most per listing is another important component when deciding where to invest in a Airbnb Rental property. So, after grouping the data by neighborhood and plotting the results it's apparent that the Five Points neighborhood charges the most per listing. It is important to remember that Five Points also has the most listings over the past three years so this data point is not an anomoly due to a small sample size. This is a great indicator that the Five Points neighborhood is the optimal location to invest in a short-term rental property.
 
-
-## Investment Risks / Changes to Market? i.e. Local Government Regulations?
-
-1) https://www.airbnb.com/help/article/1404/denver-co
-
-2) https://www.westword.com/news/denver-city-council-approves-new-rules-for-short-term-rentals-11678846
-
-3) https://www.denvergov.org/content/denvergov/en/denver-business-licensing-center/business-licenses/short-term-rentals.html
-
-4) https://www.avalara.com/mylodgetax/en/blog/2019/03/new-rules-for-denver-airbnbs-start-in-april.html
+![Alt](./images/final_plots/top_5_neighb_price.png)
 
 ## Conclusion
 Five points, entire home, occupancy rate, COVID-19, 
 
 ## Future Analysis
 
-- BONUS: Which rental properties have the most reviews? Why?
-- BONUS: How Does Variation in Seasonality Affect Rental Rates or Occupancy?
-- BONUS: How has the Denver Airbnb occupancy rate changed over the years? 
-- BONUS: Which Denver Airbnb listings are the most successful (i.e. have most user reviews) and where are they located?
-- BONUS: What happened around the peak of November 2018 and dip of quantity of listings around June 2019?
+How Does Variation in Seasonality Affect Rental Rates or Occupancy?
+How has the Denver Airbnb occupancy rate changed over the years? 
+Which Denver Airbnb listings are the most successful (i.e. have most user reviews) and where are they located?
 - BONUS: Investment risks and Local government regulations?
 - BONUS: How has COVID impacted the Denver Airbnb Market with regard to Occupancy? Has it rebounded?
