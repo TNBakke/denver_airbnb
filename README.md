@@ -8,13 +8,13 @@ Since moving to Denver about two years ago, I have been considering an investmen
 
 ## Airbnb History
 
-The pioneer of the short-term vacation rental property marketplace, Airbnb, was founded in 2008 in San Francisco, CA. Airbnb was conceived after its founders rented out an air mattress in their living room, effectively turning their apartment into a bed and breakfast, to offset the high cost of rent in San Francisco. The company name "Airbnb" is a shortened version of its original name, AirBedandBreakfast.com. Over the years, the Airbnb marketplace has expanded rapidly and currently has rentals in 81,000 cities and 191 countries throughout the world. On August 19, 2020, Airbnb announced that it had filed for an initial public offering (IPO) and the company has been privately valued at 31 billion USD.
+The pioneer of the short-term vacation rental marketplace, Airbnb, was founded in 2008 in San Francisco, CA. Airbnb was conceived after its founders rented out an air mattress in their living room, effectively turning their apartment into a bed and breakfast, to offset the high cost of rent in San Francisco. The company name "Airbnb" is a shortened version of its original name, AirBedandBreakfast.com. Over the years, the Airbnb marketplace has expanded rapidly and currently has rentals in 81,000 cities and 191 countries throughout the world. On August 19, 2020, Airbnb announced that it had filed for an initial public offering (IPO) and the company has been privately valued at 31 billion USD.
 
-[*Source*](https://en.wikipedia.org/wiki/Airbnb)
+##### [*Source: wikipedia.org/wiki/Airbnb*](https://en.wikipedia.org/wiki/Airbnb) #####
 
 ## Denver Airbnb Market Data
 
-The 'Inside Airbnb' project compiled the Denver Airbnb datasets I used for my research and they have hundreds of other cities across the world to analyze (See project details here: http://insideairbnb.com/get-the-data.html). The data was scraped from Airbnb's website and the first dataset was published in May 2016. However, the second Denver Airbnb dataset was not published until November 2017 which is a gap of approximately 1.5 years. After that, the data was collected and published at a much more consistant rate eventually being published every month starting in July 2018. Fortunately, the datasets that were published by 'Inside Airbnb' did not require much data munging as there were almost zero NaN values so I was able to focus the majority of my time on the analysis. The data included in each month's dataset includes the following CSV files: "listings.csv", "calendar.csv", "reviews.csv", and "neighborhoods.csv". I used the "listings.csv" files for the majority of my data analysis. However, I needed the "calendar.csv" to compute the average Devner Rental Occupancy Rate.   
+The 'Inside Airbnb' project compiled the Denver Airbnb datasets I used for my research and they have hundreds of other cities across the world to analyze (see project details [here](http://insideairbnb.com/get-the-data.html) for more information). The data was scraped from Airbnb's website and the first Denver Airbnb dataset was published in May 2016. However, the second Denver Airbnb dataset was not published until November 2017 which is a gap of approximately 1.5 years. After that, the data was collected and published at a much more consistant rate eventually being published every month starting in July 2018. Fortunately, the datasets that were published by 'Inside Airbnb' did not require much data munging as there were almost zero NaN values so I was able to focus the majority of my time on the analysis. The majority of NaN values I came across were under the column header "neighbourhood_group" which did not provide any additional insight for me so I was able to easily drop that column. The files included in each month's dataset were: "listings.csv", "calendar.csv", "reviews.csv", and "neighborhoods.csv". I used the "listings.csv" and "neighborhoods.csv" files for the majority of my data analysis. However, I needed the "calendar.csv" to compute the average Denver Rental Occupancy Rate.   
 
 
 ![Alt](./images/listings_csv_table.png)
@@ -24,38 +24,39 @@ The 'Inside Airbnb' project compiled the Denver Airbnb datasets I used for my re
 
 In order to feel confident in making the correct investment decision, there are many questions that need to be answered with the data. In my opinion, the most important questions that needed to be answered before seriously considering the investment are listed below:
 
-* How has the Denver Airbnb Market changed over the years in terms of quantity of listings? -- DONE
-* How does the Airbnb occupancy rate in Denver compare to U.S. Average? -- DONE
-* What is the current breakdown of Airbnb Rental types in Denver? -- DONE
-* What is the distribution of prices by each rental type? -- DONE
-* What are the most popular Denver Airbnb Rental Neighborhoods? -- DONE
+* How has the Denver Airbnb Market changed over the years in terms of quantity of listings?
+* How does the Airbnb occupancy rate in Denver compare to U.S. Average?
+* What is the current breakdown of Airbnb Rental types in Denver?
+* What is the distribution of prices by each rental type?
+* What are the most popular Denver Airbnb Rental Neighborhoods?
 * Which Denver Airbnb Neighborhoods charge the most for listings?
-* Which neighborhoods are growing the fastest in terms of rental properties? 
+* Which neighborhoods are growing the fastest in terms of Airbnb Rentals?
 
 ## Quantity of Denver Airbnb Listings Through the Years
 
-After analyzing the data from the available datasets, you can see that the quantity of Denver Airbnb Rentals increased from under 4,000 in November 2017 to a maximum of about 5,200 units in November 2018. It is worth noting that the quantity of Denver Airbnb Rentals in May 2016 was only 2,505 units, but since there was an 18 month gap between datasets, I decided not to include that value in my plot. That growth over the 18 month span is a 156% increase in rental units.  INSERT NOTE ABOUT COVID DROP OFF AND ADD LINE TO PLOT!!!
+After analyzing the data from the available datasets, you can see that the quantity of Denver Airbnb Rentals increased from under 4,000 in November 2017 to a maximum of about 5,200 units in November 2018. It is worth noting that the quantity of Denver Airbnb Rentals in May 2016 was only 2,505 units. However, since there was an 18 month gap between the first and second published Denver Airbnb dataset, I decided not to include that value in my plot. For reference, the growth over that 18 month span is a 156% increase in rental units. It is also interesting to note the red veritcal line I added to my plot below. This red line signifies the beginning of the mandatory COVID-19 pandemic lockdowns and you can see the sharp decrease in available rental units after that date in March 2020.
 
-**INSERT PLOT HERE**
+![Alt][./images/final_plots/quan_plot_final.png]
 
 ## Average Occupancy Rate in Denver Compared to U.S. Average
 
 To determine the average Occupancy Rate in the Denver market, I evaluated the "calendar.csv" files from March 2019 to March 2020 so I could get an accurate assessment of the market prior to the COVID-19 global pandemic (Note: The Dataset for March_2020 was scraped before lockdowns in the United States began). By taking the occupancy rates and averaging them out across 12 months it will ensure that I am capturing any fluctuations due to 'seaonality'. While researching online, I found a resource which calcuated the average Occupancy Rate across 500 cities in the U.S. to be about 48% (see source link below). From my analysis, Denver, Colorado's rental Occupancy Rate was a very high 62.1% (about 129% over the national average). 
 
-(SOURCE: https://www.alltherooms.com/analytics/average-airbnb-occupancy-rates-by-city/)
+![Alt](./images/average-airbnb-occupancy-rate-distribution-US-500-cities-1024x512.png)
 
-**INSERT PLOT HERE -- TAKE PLOT FROM SOURCE ABOVE
-
+##### [*Source: alltherooms.com*](https://www.alltherooms.com/analytics/average-airbnb-occupancy-rates-by-city/) #####
 
 ## Current Breakdown of Airbnb Listings by Rental Type 
 
-By analyzing the "listings.csv" file for the first quarter of 2020 (January, February, March), I was able to get an average breakdown of the current Devner Airbnb Market by type of room. As it turns out, the "Entire Home/Apartment" type of rental accounts for the vast majority of all Denver Airbnb rentals at 75%. After that, the "Private Room" rental type contributes to about 23.1% of the market. Then the "Shared Room" and "Hotel Room" rental types account for only 1.1% and 0.73%, respectively. 
+By analyzing the "listings.csv" file for the first quarter of 2020 (January, February, March), I was able to get an average breakdown of the current Devner Airbnb Market by type of room. As it turns out, the "Entire Home/Apartment" type of rental accounts for the vast majority of all Denver Airbnb rentals at 75%. After that, the "Private Room" rental type contributes to about 23.1% of the market. Then the "Shared Room" and "Hotel Room" rental types account for only 1.1% and 0.73%, respectively. From an investment perspective, this gives a great indication that travelers want to stay in a Entire Home/Apartment rental type. So, this is more evidence to support purchasing a short-term rental property in Denver.
+
+![Alt](./images/final_plots/type_breakdown.png)
 
 ## What is the Current Distribution of Prices by Each Rental Type?
 
-One of the most important factors when considering a short-term vacation rental investment is regarding the distribution of the pricing per each rental type. Currently, Airbnb Hosts have the ability to host an Entire House (or Apartment), Private Room in your Home (or Apartment), Shared Room in your Home (or Aparment) and now hotels are able to post their available rooms on the Airbnb marketplace. Before generating the pricing distributions for each rental type, I sorted the data and removed any outliers (Nightly listing price over 9000 USD). After analyzing the pricing data for each type of rental type, it is clear that you can generate the most revenue from listing your Entire Home (or Apartment) by over two times the next highest average price which is a hotel room. The violin plots shown below are interesting as they illustrate each rental type's distribution of pricing. As a note, I set the X-axis limit to 1,000 USD to accentuate the distribution curves and eliminate the outliers which do not provide much insight.
+One of the most important factors when considering a short-term vacation rental investment is regarding the distribution of the pricing per each rental type. As noted above, Airbnb Hosts have the ability to host an Entire House (or Apartment), Private Room in your Home (or Apartment), Shared Room in your Home (or Aparment) and now hotels are able to post their available rooms on the Airbnb marketplace. Before generating the pricing distributions for each rental type, I sorted the data and removed any outliers (nightly listing price over 9000 USD). After analyzing the pricing data for each type of rental type, it is clear that you can generate the most revenue from listing your Entire Home (or Apartment) by over two times the next highest average price which is a hotel room. The 'violin plots' shown below are interesting as they illustrate each rental type's distribution of pricing. As a note, I set the X-axis limit to 1,000 USD to accentuate the distribution curves and eliminate the outliers which do not provide much insight.
 
-**INSERT PLOT HERE**
+![Alt](./images/final_plots/violin_plot_w_lim.png)
 
 ## Which Denver Neighborhoods Have the Most Listings?
 

@@ -52,6 +52,7 @@ def airbnb_quan_plot():
     plt.xlabel("Date (MM/YY)")
     # Plotting a Vertical Line to Represent COVID-19 lockdown start
     ax.axvline(29.5, color='red', linestyle='--', linewidth=1)
+    plt.text(29.6, 2600, 'COVID-19 Lockdown', color = 'red', rotation=90)
     plt.tight_layout()
     plt.ylim(2000)
     plt.show()
