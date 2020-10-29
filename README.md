@@ -69,13 +69,13 @@ When investing in a short-term rental property it is critical to find the optima
 
 Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings over the past year is an important factor when evaluating potential locations for an investment as well. After plotting the data, it was apparent that the two fastest growing neighborhoods in the Denver Airbnb market were Union Station at 66.2% YoY (Year over Year) growth and Green Valley Ranch at 59.6% YoY. The other neighborhoods that rounded out the Top 5 showed much more modest gains. As an aside, I decided to chose to analyze the data between the span of February 2019 and February 2020 to ensure that I would not capture any data skewed data as a result of the COVID-19 pandemic.
 
-![Alt](./images/final_plots/fastest_growing_neighbs.png)
+![Alt](./images/final_plots/fastest_growing_neighbs_FINAL.png)
 
 ## Which Denver Neighborhoods Charge the Highest Listing Prices?
 
 Evaluating the Denver Airbnb neighborhoods which charge the most per listing is another important component when deciding where to invest in a Airbnb Rental property. So, after grouping the data by neighborhood and plotting the results it's apparent that the Five Points neighborhood charges the most per listing by about 20% ($414.46 USD compared to 345.09 USD). It is important to remember that Five Points also has the most listings over the past three years so this data point is not an anomoly due to a small sample size. This is a great indicator that the Five Points neighborhood is the optimal location to invest in a short-term rental property.
 
-![Alt](./images/final_plots/top_5_neighb_price.png)
+![Alt](./images/final_plots/top_5_neighborhoods_price_FINAL.png)
 
 ## Conclusion
 After my thorough analysis of the Denver Airbnb market, I feel there is strong evidence that investing in a short-term rental property will be successful. One of the most notable results I found is the very high Airbnb occupancy rate for Denver of 62.1% compared to the national average of only 48% (across 500 U.S. cities see source noted above for more information). Additionally, I feel like the best short-term rental investment would be in the Five Points neighborhood for two reason. First, Five Points has the most Airbnb Rental listings over the past 3 years by a margin of about 44%. Second, the Five Points neighborhood charges the most per Average Rental Price by over 20%. Lastly, it will be interesting to see if and when the Denver Airbnb Market is able to recover from the COVID-19 pandemic. 
