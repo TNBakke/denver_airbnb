@@ -1,18 +1,24 @@
-# Denver Airbnb Market Analysis for Potential Investment Opportunity
+# Denver Airbnb Market Analysis for Potential Investment
+
+![Alt](./images/airbnb_logo2.jpeg)
 
 ## Motivation
 
-Since moving to Denver about two years ago, I have been interested in investing in a local short-term rental property. The potential cash flow generated from a optimally located and priced rental sounds very appealing. I have spoken to several people who have or had Airbnb rental properties, but nobody in the Denver market. Additionally, when you speak to people who have had short-term rentals with Airbnb it usually encites an emotional and biased response about their specific experiences. So, when I found the Denver Airbnb datasets I thought this would be the perfect opportunity to delve in to the data and come up with my own unbiased analysis. 
+Since moving to Denver about two years ago, I have been considering an investment in a local short-term rental property. The potential cash flow generated from an optimally located and priced rental sounds very appealing. I have spoken to several people who have or had Airbnb rental properties, but nobody in the Denver market. Additionally, when you speak to people who have had short-term rentals with Airbnb it usually encites an emotional and biased response about their specific experiences. So, when I found the Denver Airbnb datasets I thought this would be the perfect opportunity to delve in to the data and come up with my own unbiased analysis. 
 
 ## Airbnb History
 
 The pioneer of the short-term vacation rental property marketplace, Airbnb, was founded in 2008 in San Francisco, CA. Airbnb was conceived after its founders rented out an air mattress in their living room, effectively turning their apartment into a bed and breakfast, to offset the high cost of rent in San Francisco. The company name "Airbnb" is a shortened version of its original name, AirBedandBreakfast.com. Over the years, the Airbnb marketplace has expanded rapidly and currently has rentals in 81,000 cities and 191 countries throughout the world. On August 19, 2020, Airbnb announced that it had filed for an initial public offering (IPO) and the company has been privately valued at 31 billion USD.
 
-(SOURCE: https://en.wikipedia.org/wiki/Airbnb)
+[*Source*](https://en.wikipedia.org/wiki/Airbnb)
 
 ## Denver Airbnb Market Data
 
 The 'Inside Airbnb' project compiled the Denver Airbnb datasets I used for my research and they have hundreds of other cities across the world to analyze (See project details here: http://insideairbnb.com/get-the-data.html). The data was scraped from Airbnb's website and the first dataset was published in May 2016. However, the second Denver Airbnb dataset was not published until November 2017 which is a gap of approximately 1.5 years. After that, the data was collected and published at a much more consistant rate eventually being published every month starting in July 2018. Fortunately, the datasets that were published by 'Inside Airbnb' did not require much data munging as there were almost zero NaN values so I was able to focus the majority of my time on the analysis. The data included in each month's dataset includes the following CSV files: "listings.csv", "calendar.csv", "reviews.csv", and "neighborhoods.csv". I used the "listings.csv" files for the majority of my data analysis. However, I needed the "calendar.csv" to compute the average Devner Rental Occupancy Rate.   
+
+
+![Alt](./images/listings_csv_table.png)
+
 
 ## Investment Opportunity / Strategy
 

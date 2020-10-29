@@ -182,6 +182,70 @@ def top_neighborhoods(month_dict1, month_dict2, month_dict3):
     plt.show();
 
 
+# Plot 5: Which Denver Neighborhoods are Fastest Growing?
+
+# Need to utilize te neighborhood_breakdown function from the EDA script to 
+# get dictionaries with results. I used top_num = 30 for this specifically.
+
+# I grabbed the data for February 2019 and 2020 and compared the results.
+# Where the keys are the neighborhoods and the values are the rental units.
+
+new_d = {}
+for key, val in feb_2020_d.items():
+    for k, v in feb_2019_d.items():
+        if key == k:
+            new_d[key] = val-v
+
+# Sort the results of the dictionary in order to see which neighborhoods had the 
+# largest change over the time period (positive numbers are growing)
+
+neighb_list_grow = grow_neighb.keys()
+neighb_increase = grow_neighb.values()
+
+# Here are the growth results that I would like to plot. If I have time I will include
+# a more Pythonic version of my results below
+grow_neighb = {'Union Station': (246/148-1), 'Green Valley Ranch': (158/99-1) , 
+              'Stapleton':(123/104-1) , 'West Colfax': (144/129-1) , 
+              'Cheesman Park': (97/86-1) }
+
+fig, ax = plt.subplots(figsize=(15,10))
+plt.rcParams['figure.dpi'] = 400
+# plt.rcParams.update({'font.size': 26})
+
+ax.bar(neighb_list_grow, neighb_increase, color = 'g')
+ax.set_title('Top 5 Fastest Growing Airbnb Neighborhoods from February 2019-2020')
+ax.set_xlabel('Denver Neighborhoods')
+ax.set_ylabel('Percent Growth')
+plt.xticks(rotation=70)
+# plt.tight_layout()
+
+plt.show()
+
+
+# Plot 6: Which Denver Neighborhoods Charge the Highest Listing Price?
+
+def top_5_airbnb_neighb_price(file_path):
+
+    df = pd.read_csv(file_path)
+
+    neighb_price_d = dict(df['price'].mean().sort_values(ascending=False).head(5))
+
+    neighb_list = neighb_price_d.keys()
+    neighb_price_list = neighb_price_d.values()
+
+    fig, ax = plt.subplots(figsize=(15,10))
+    plt.rcParams['figure.dpi'] = 400
+    plt.rcParams.update({'font.size': 22})
+
+    ax.bar(neighb_list, neighb_price_list, color = 'b')
+    ax.set_title('Top 5 Airbnb Neighborhood Average Rental Price')
+    ax.set_xlabel('Denver Neighborhoods')
+    ax.set_ylabel('Average Rental Price')
+    plt.xticks(rotation=70)
+
+    plt.show()
+
+
 if __name__ == '__main__':
 
     # Plot 1 Testing
@@ -192,3 +256,5 @@ if __name__ == '__main__':
 
     # Plot 3 Testing
 
+
+    # Plot 4 Testing

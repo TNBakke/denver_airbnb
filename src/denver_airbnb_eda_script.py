@@ -88,9 +88,9 @@ def rental_breakdown(date_, file_path):
 
 # Question 3: Which Top 10 neighborhoods currently have the most Airbnb listings?
 
-def neighborhood_breakdown(date_, file_path):
+def neighborhood_breakdown(date_, file_path, top_num = 10):
     '''
-    Collects the results of the Top 10 Airbnb Rental Neighborhoods for the desired Month
+    Collects the results of the Top Num Airbnb Rental Neighborhoods for the desired Month
 
     Parameters:
     file_path (str): Direct file path to desired dataset 
@@ -104,8 +104,8 @@ def neighborhood_breakdown(date_, file_path):
     df = pd.read_csv(file_path)
     df_grouped = df.groupby('neighbourhood').count()
     
-    # Grabbing the results of the Top 10 and putting them in a dictionary 
-    new_d = dict(df_grouped['id'].sort_values(ascending = False).head(10))
+    # Grabbing the results of the 'Top Num' and putting them in a dictionary 
+    new_d = dict(df_grouped['id'].sort_values(ascending = False).head(top_num))
 
     # Iterating through the dictionary keys to put them in lower case and add "_" in place of " "
     new_d = {k.lower(): v for k,v in new_d.items()}
