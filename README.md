@@ -47,7 +47,7 @@ By analyzing the "listings.csv" file for the first quarter of 2020 (January, Feb
 
 ## What is the Current Distribution of Prices by Each Rental Type?
 
-One of the most important factors when considering a short-term vacation rental investment is regarding the distribution of the pricing per each rental type. Currently, Airbnb Hosts have the ability to host an Entire House (or Apartment), Private Room in your Home (or Apartment), Shared Room in your Home (or Aparment) and now hotels are able to post their available rooms on the Airbnb marketplace. Before generating the pricing distributions for each rental type, I sorted the data and removed any outliers (Nightly listing price over 9000 USD). After analyzing the pricing data for each type of rental type, it is clear that you can generate the most revenue from listing your Entire Home (or Apartment) by over two times the next highest average price which is a hotel room. The violin plots shown below are interesting as they illustrate each rental type's distribution of pricing. As a note, I set the X-axis limit to 1,500 USD to accentuate the distribution curves and eliminate the outliers which do not provide much insight.
+One of the most important factors when considering a short-term vacation rental investment is regarding the distribution of the pricing per each rental type. Currently, Airbnb Hosts have the ability to host an Entire House (or Apartment), Private Room in your Home (or Apartment), Shared Room in your Home (or Aparment) and now hotels are able to post their available rooms on the Airbnb marketplace. Before generating the pricing distributions for each rental type, I sorted the data and removed any outliers (Nightly listing price over 9000 USD). After analyzing the pricing data for each type of rental type, it is clear that you can generate the most revenue from listing your Entire Home (or Apartment) by over two times the next highest average price which is a hotel room. The violin plots shown below are interesting as they illustrate each rental type's distribution of pricing. As a note, I set the X-axis limit to 1,000 USD to accentuate the distribution curves and eliminate the outliers which do not provide much insight.
 
 **INSERT PLOT HERE**
 
@@ -65,6 +65,7 @@ Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings
 
 ## Which Denver Neighborhoods Charge the Highest Listing Prices?
 
+Evaluating the Denver Airbnb neighborhoods which charge the most per listing is another important component when deciding where to invest in a Airbnb Rental property. So, after grouping the data by neighborhood and plotting the results it's apparent that the Five Points neighborhood charges the most per listing. It is important to remember that Five Points also has the most listings over the past three years so this data point is not an anomoly due to a small sample size. This is a great indicator that the Five Points neighborhood is the optimal location to invest in a short-term rental property.
 
 
 ## Investment Risks / Changes to Market? i.e. Local Government Regulations?
@@ -77,11 +78,8 @@ Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings
 
 4) https://www.avalara.com/mylodgetax/en/blog/2019/03/new-rules-for-denver-airbnbs-start-in-april.html
 
-## COVID Impact Denver Airbnb Market? Less shared rooms/homes?
-
-
 ## Conclusion
-
+Five points, entire home, occupancy rate, COVID-19, 
 
 ## Future Analysis
 
@@ -91,3 +89,4 @@ Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings
 - BONUS: Which Denver Airbnb listings are the most successful (i.e. have most user reviews) and where are they located?
 - BONUS: What happened around the peak of November 2018 and dip of quantity of listings around June 2019?
 - BONUS: Investment risks and Local government regulations?
+- BONUS: How has COVID impacted the Denver Airbnb Market with regard to Occupancy? Has it rebounded?
