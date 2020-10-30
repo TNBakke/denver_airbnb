@@ -67,7 +67,7 @@ When investing in a short-term rental property it is critical to find the optima
 
 ## Which Denver Neighborhoods are the Fastest Growing?
 
-Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings over the past year is an important factor when evaluating potential locations for an investment as well. After plotting the data, it was apparent that the two fastest growing neighborhoods in the Denver Airbnb market were Union Station at 66.2% YoY (Year over Year) growth and Green Valley Ranch at 59.6% YoY. The other neighborhoods that rounded out the Top 5 showed much more modest gains. As an aside, I decided to chose to analyze the data between the span of February 2019 and February 2020 to ensure that I would not capture any data skewed data as a result of the COVID-19 pandemic.
+Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings over the past year is an important factor when evaluating potential locations for an investment as well. After plotting the data, it was apparent that the two fastest growing neighborhoods in the Denver Airbnb market were Union Station at 66.2% YoY (Year over Year) growth and Green Valley Ranch at 59.6% YoY. The other neighborhoods that rounded out the Top 5 showed much more modest gains. As a potential investor, it may be worth taking a closer look at the Green Valley Ranch neighborhood, but personally I think it is too far away from downtown Denver (approximately 23 minute drive to Union Station) to maximize annual shot-term rental revenue. 
 
 ![Alt](./images/final_plots/fastest_growing_neighbs_FINAL.png)
 
