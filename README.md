@@ -1,6 +1,6 @@
 # Denver Airbnb Market Analysis for Potential Investment
 
-![Alt](./images/airbnb_logo_3_new.png)
+![Alt](./images/final_plots/airbnb_logo_3_new.png)
 
 ## Motivation
 
