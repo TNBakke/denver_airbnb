@@ -42,7 +42,7 @@ After analyzing the data from the available datasets, you can see that the quant
 
 To determine the average Occupancy Rate in the Denver market, I evaluated the "calendar.csv" files from March 2019 to March 2020 so I could get an accurate assessment of the market prior to the COVID-19 global pandemic (*Note: The Dataset for March_2020 was scraped before lockdowns in the United States began*). By taking the occupancy rates and averaging them out across 12 months it will ensure that I am capturing any fluctuations due to 'seaonality'. While researching online, I found a resource which calcuated the average Occupancy Rate across 500 cities in the U.S. to be about 48% (see source link below). From my analysis, Denver, Colorado's rental Occupancy Rate was a very high 62.1% (about 129% over the national average). This is great supporting evidence that investing in a short-term rental property will be successful in the Denver market.
 
-![Alt](./images/average-airbnb-occupancy-rate-distribution-US-500-cities-1024x512.png)
+![Alt](./images/final_plots/average-airbnb-occupancy-rate-distribution-US-500-cities-1024x512.png)
 
 ##### [*Source: alltherooms.com*](https://www.alltherooms.com/analytics/average-airbnb-occupancy-rates-by-city/) #####
 
