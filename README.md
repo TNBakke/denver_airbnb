@@ -73,7 +73,7 @@ Analyzing the Top 5 Fastest Growing Neighborhoods with regard to Airbnb listings
 
 ## Which Denver Neighborhoods Charge the Highest Listing Prices?
 
-Evaluating the Denver Airbnb neighborhoods which charge the most per listing is another important component when deciding where to invest in a Airbnb Rental property. So, after grouping the data by neighborhood and plotting the results it's apparent that the Five Points neighborhood charges the most per listing by about 20% ($414.46 USD compared to 345.09 USD). It is important to remember that Five Points also has the most listings over the past three years so this data point is not an anomoly due to a small sample size. This is a great indicator that the Five Points neighborhood is the optimal location to invest in a short-term rental property.
+Evaluating the Denver Airbnb neighborhoods which charge the most per listing is another important component when deciding where to invest in a Airbnb Rental property. So, after grouping the data by neighborhood and plotting the results it's apparent that the Five Points neighborhood charges the most per listing by about 20% ($414.46 USD compared to 345.09 USD). It is important to remember that Five Points also has the most listings over the past three years so this data point is not an anomoly due to a small sample size. These are great indicators that the Five Points neighborhood is the optimal location to invest in a short-term rental property.
 
 ![Alt](./images/final_plots/top_5_neighborhoods_price_FINAL.png)
 
