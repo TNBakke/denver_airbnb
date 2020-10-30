@@ -56,7 +56,7 @@ By analyzing the "listings.csv" file for the first quarter of 2020 (January, Feb
 
 One of the most important factors when considering a short-term vacation rental investment is regarding the distribution of the pricing per each rental type. As noted above, Airbnb Hosts have the ability to host an Entire House (or Apartment), Private Room in your Home (or Apartment), Shared Room in your Home (or Aparment) and now hotels are able to post their available rooms on the Airbnb marketplace. Before generating the pricing distributions for each rental type, I sorted the data and removed any outliers (nightly listing price over 9000 USD). After analyzing the pricing data for each type of rental type, it is clear that you can generate the most revenue from listing your Entire Home (or Apartment) by over two times the next highest average price which is a hotel room. Below I added the table for the statistical results of each pricing distribution including the means of each type. Additionally I added some 'violin plots' below illustrating each rental type's distribution of pricing. As a note, I set the X-axis limit to 1,000 USD to accentuate the distribution curves and eliminate the outliers which do not provide much insight.
 
-![Alt](./images/denver_airbnb_pricing_table.png)
+![Alt](./images/final_plots/denver_airbnb_pricing_table.png)
 ![Alt](./images/final_plots/violin_plot_w_lim.png)
 
 ## Which Denver Neighborhoods Have the Most Listings?
