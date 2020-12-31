@@ -1,15 +1,13 @@
-# Eploratory Data Analysis for Denver Airbnb Datasets
+# EDA
 
-# Importing Python Libraries Prior to Data Analysis Work. I will import my plotting libraries on the plotting script.
+# Standard Imports
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-# Question 1: How much has the Denver Airbnb market grown over the years with regard to quantity of listings? 
-
-# Need to Collect the Quantity of Denver Airbnb Rentals from Each Data Set Available
+# Function to determine airbnb quantities over time
 
 def get_total_airbnb_quan(file_path):
     ''' 
@@ -29,10 +27,9 @@ def get_total_airbnb_quan(file_path):
 
     return airbnb_quan
 
-# Creating a Dictionary Accumulator to Store Data
 total_airbnb_quan_dict = {}
 
-# Add Results to a Dictionary in Order to Keep Track of Total Listings per Month
+# Add Results to Dict in Order to Keep Track of Total Listings per Month
 
 def update_total_quan_dict(date_, airbnb_quan):
     '''
@@ -53,11 +50,8 @@ def update_total_quan_dict(date_, airbnb_quan):
 
     return total_airbnb_quan_dict
 
-# Repeat Steps Above for 27 Available Datasets for Denver Airbnb Data for Full Analysis
 
-# Plot the Results Using a Line Plot to Show Variation Over Time (See denver_airbnb_plot_script.py for details)
-
-# Question 2: What is the makeup of the current Denver Airbnb rental listing broken down by rental type?
+# Function to see Denver Airbnb rental listing broken down by rental type
 
 def rental_breakdown(date_, file_path):
     '''
@@ -76,17 +70,13 @@ def rental_breakdown(date_, file_path):
     df_grouped = df.groupby('room_type').count()
     df_grouped_new = df_grouped[['id']]
     
-    # Changing the DataFrame Object to a Dictionary for Data Storage
     rental_type_dict = df_grouped_new.to_dict()
 
-    # Updating the Key Value to Inputted Date String from Function Parameter 
     rental_type_dict[date_] = rental_type_dict.pop('id')
 
     return rental_type_dict
 
-# Plot the Results Using a Histogram to Rental Type Breakdown (See denver_airbnb_plot_script.py for details)
-
-# Question 3: Which Top 10 neighborhoods currently have the most Airbnb listings?
+# Function to show Top 10 neighborhoods currently have the most Airbnb listings
 
 def neighborhood_breakdown(date_, file_path, top_num = 10):
     '''
@@ -104,19 +94,16 @@ def neighborhood_breakdown(date_, file_path, top_num = 10):
     df = pd.read_csv(file_path)
     df_grouped = df.groupby('neighbourhood').count()
     
-    # Grabbing the results of the 'Top Num' and putting them in a dictionary 
     new_d = dict(df_grouped['id'].sort_values(ascending = False).head(top_num))
 
-    # Iterating through the dictionary keys to put them in lower case and add "_" in place of " "
     new_d = {k.lower(): v for k,v in new_d.items()}
     new_d = {k.replace(" ","_"): v for k,v in new_d.items()}
 
-    # Creating a nested dictionary to add Month to Data for Clarity (i.e. 'jan_2020')
     neighborhood_d = {date_ : new_d}
 
     return neighborhood_d
 
-# Question 4: What is the current distribution of pricing for each rental type?
+# Function to calculate distribution of pricing for each rental type
 
     def price_breakdown_by_type(file_path):
         '''
@@ -159,7 +146,7 @@ def neighborhood_breakdown(date_, file_path, top_num = 10):
 
         return pricing_d
     
-# Question 5: Which neighborhoods charge the most per listing?
+# Function to see which neighborhoods charge the most per listing
 
     def top_10_neighborhood_prices(file_path):
         '''
@@ -181,7 +168,7 @@ def neighborhood_breakdown(date_, file_path, top_num = 10):
 
         return neighb_pricing_d
 
-# Question 6: What is the current occupancy rate for Airbnb in Denver?
+# Function to see what is the current occupancy rate for Airbnb in Denver?
 
     def occupancy_rate(file_path):
         '''
@@ -205,27 +192,16 @@ def neighborhood_breakdown(date_, file_path, top_num = 10):
     
 if __name__ == '__main__':
     
-    # From Question 1 Section Above:
-
     get_total_airbnb_quan('./data/may_2016/2016_may_listings.csv')
     update_total_quan_dict('jan_2020', 2505)
     
-    # From Question 2 Section Above:
-
     rental_breakdown('jan_2020','./data/jan_2020/jan_2020_listings.csv')
-
-    # From Question 3 Section Above:
 
     neighborhood_breakdown('jan_2020','./data/jan_2020/jan_2020_listings.csv')
     
-    # From Question 4 Section Above:
     price_breakdown_by_type('./data/jan_2020/jan_2020_listings.csv')
 
-    # From Question 5 Section Above:
-
     top_10_neighborhood_prices('./data/feb_2020/feb_2020_listings.csv')
-
-    # From Question 6 Section Above:
 
     occupancy_rate('./data/denver_airbnb_2019/calendar.csv')
 
