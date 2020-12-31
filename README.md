@@ -63,7 +63,7 @@ One of the most important factors when considering a short-term vacation rental 
 
 When investing in a short-term rental property it is critical to find the optimal location to maximize annual revenue. So, I analyzed the Denver Airbnb Data over the span of 3 years (April 2018 - April 2020) to see which neighborhoods had the most Airbnb listings and how they changed over the years. After I assessed the data, it was interesting that the Top 5 Airbnb Rental Neighborhoods were the same for all 3 years with some variation of quantities. The biggest takeaway when evaluating the plot, was that Five Points has the highest amount of rentals by a margin of 44% for April 2020. Additionally it's interesting to note the steady decrease in Airbnb listings in the Capitol Hill neighborhood.
 
-![Alt](./images/final_plots/testtesttest.png)
+![Alt](./images/final_plots/top_5_rental_neighbs_2018_2020.png)
 
 ## Which Denver Neighborhoods are the Fastest Growing?
 
